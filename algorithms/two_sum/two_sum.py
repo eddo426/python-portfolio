@@ -1,5 +1,4 @@
 from typing import List
-import numpy as np
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:

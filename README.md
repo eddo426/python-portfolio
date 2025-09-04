@@ -1,7 +1,7 @@
 # Python Portfolio
 
 This repository is a **collection of Python coding challenges, OOP refactors, file handling scripts, and design pattern examples**.  
-It serves as my personal portfolio and preparation material for technical interviews (including the BairesDev Python 3 Coding Challenge).
+It serves as my personal portfolio and preparation material for technical interviews.
 
 ![Python tests](https://github.com/eddo426/python-portfolio/actions/workflows/python-tests.yml/badge.svg)
 
@@ -12,6 +12,7 @@ It serves as my personal portfolio and preparation material for technical interv
 ### 🔹 Algorithms
 Classic algorithmic challenges with unit tests:
 - [Two Sum](algorithms/two_sum/README.md)
+- [Valid Parenthesis](algorithms/valid_parentheses/README.md)
 
 ---
 
@@ -20,6 +21,4 @@ All problems include unit tests.
 To run them:
 
 ```bash
-python -m unittest discover
-
-```
+python -m unittest discover -s algorithms
