@@ -15,14 +15,14 @@ An input string is valid if:
 3. Every close bracket has a corresponding open bracket of the same type.
 
 **Constraints:**
-- `1 <= s.length <= 104`
+- `1 <= s.length <= 10**4`
 - `s` consists of parentheses only `'()[]{}'`.
 
 ## Solution
 The algorithm uses a stack to validate balanced parentheses:
 1. Iterate through each character in the string.
-2. If the character is an opening bracket ((, [, {), push it onto the stack.
-3. If the character is a closing bracket (), ], }), check the top of the stack:
+2. If the character is an opening bracket (`(`, `[`, `{`), push it onto the stack.
+3. If the character is a closing bracket (`)`, `]`, `}`), check the top of the stack:
 - If the stack is empty, or the top does not match the corresponding opening bracket, return False.
 - Otherwise, pop the stack.
 4. At the end, if the stack is empty, return True. Otherwise, return False.
